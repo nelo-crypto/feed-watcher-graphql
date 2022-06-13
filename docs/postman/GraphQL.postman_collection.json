@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "Objects",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -24,6 +24,30 @@
 						"localhost"
 					],
 					"port": "3002"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Objects (heroku)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\n  objects(classification: \"Prints\", size: 10, page: 2, sort: \"rank\", sortorder: \"desc\", hasimage: 1, verificationlevel: 4) {\n    records {\n      id\n      title\n      images {\n        width\n        height\n      }\n    }\n    info {\n      prev\n      next\n      totalrecords\n    }\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://feed-watcher-graphql.herokuapp.com",
+					"protocol": "http",
+					"host": [
+						"feed-watcher-graphql",
+						"herokuapp",
+						"com"
+					]
 				}
 			},
 			"response": []
