@@ -1,0 +1,32 @@
+{
+	"info": {
+		"_postman_id": "d4d1a895-6d36-4009-a67b-b2171e1991fb",
+		"name": "GraphQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\n  objects(classification: \"Prints\", size: 10, page: 2, sort: \"rank\", sortorder: \"desc\", hasimage: 1, verificationlevel: 4) {\n    records {\n      id\n      title\n      images {\n        width\n        height\n      }\n    }\n    info {\n      prev\n      next\n      totalrecords\n    }\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002"
+				}
+			},
+			"response": []
+		}
+	]
+}
