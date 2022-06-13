@@ -1,5 +1,4 @@
 import {HTTPDataSource} from 'apollo-datasource-http'
-import {ObjectParameters} from '../../interfaces/ObjectParameters'
 import API from '../enums/Api'
 
 export default class Objects extends HTTPDataSource {
@@ -13,18 +12,19 @@ export default class Objects extends HTTPDataSource {
         })
     }
 
-    serialize(parameters: ObjectParameters) {
+    serialize(parameters: any) {
         let str = []
 
-        for (let property in parameters)
+        for (let property in parameters) {
             if (parameters.hasOwnProperty(property)) {
                 str.push(encodeURIComponent(property) + '=' + encodeURIComponent(parameters[property].toString()))
             }
+        }
 
         return str.join('&')
     }
 
-    async getResponse(parameters: ObjectParameters) {
+    async getResponse(parameters: any) {
         const params: string = this.serialize(parameters)
 
         let path = `/Object?apikey=${process.env.API_KEY}`
