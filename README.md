@@ -17,3 +17,7 @@ Make sure you have the `.env` file in the root of the folder with the `API_KEY` 
 yarn install
 yarn run dev
 ```
+
+### Heroku
+
+This app is live at Heroku (`http://feed-watcher-graphql.herokuapp.com`)
