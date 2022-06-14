@@ -55,6 +55,7 @@ export interface NexusGenObjects {
   Object: { // root type
     accessionyear?: string | null; // String
     colorcount?: number | null; // Int
+    culture?: string | null; // String
     dateoffirstpageview?: string | null; // String
     dateoflastpageview?: string | null; // String
     description?: string | null; // String
@@ -71,6 +72,7 @@ export interface NexusGenObjects {
     technique?: string | null; // String
     title?: string | null; // String
     totalpageviews?: number | null; // Int
+    verificationleveldescription?: string | null; // String
   }
   Objects: {};
   Query: {};
@@ -114,6 +116,7 @@ export interface NexusGenFieldTypes {
   Object: { // field return type
     accessionyear: string | null; // String
     colorcount: number | null; // Int
+    culture: string | null; // String
     dateoffirstpageview: string | null; // String
     dateoflastpageview: string | null; // String
     description: string | null; // String
@@ -131,6 +134,7 @@ export interface NexusGenFieldTypes {
     technique: string | null; // String
     title: string | null; // String
     totalpageviews: number | null; // Int
+    verificationleveldescription: string | null; // String
   }
   Objects: { // field return type
     info: NexusGenRootTypes['Info'] | null; // Info
@@ -169,6 +173,7 @@ export interface NexusGenFieldTypeNames {
   Object: { // field return type name
     accessionyear: 'String'
     colorcount: 'Int'
+    culture: 'String'
     dateoffirstpageview: 'String'
     dateoflastpageview: 'String'
     description: 'String'
@@ -186,6 +191,7 @@ export interface NexusGenFieldTypeNames {
     technique: 'String'
     title: 'String'
     totalpageviews: 'Int'
+    verificationleveldescription: 'String'
   }
   Objects: { // field return type name
     info: 'Info'
