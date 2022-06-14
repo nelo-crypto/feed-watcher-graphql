@@ -20,4 +20,4 @@ yarn run dev
 
 ### Heroku
 
-This app is live at Heroku (`http://feed-watcher-graphql.herokuapp.com`)
+This app is live at Heroku (`http://feed-watcher-graphql.herokuapp.com:3002`)
