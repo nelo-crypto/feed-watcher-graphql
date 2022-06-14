@@ -40,6 +40,7 @@ the standard use of the stack:
 * Build a Postman semi-automated test collection. The code is very simple and declarative but I still could have made
   mocks like in the frontend repo.
 * Add more fields from the harvardartmuseums API. I only added enough to make the demo viable in time.
+* Fix lint issues
 
 ### Heroku
 
