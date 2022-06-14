@@ -9,7 +9,12 @@ export const server = new ApolloServer({
     schema,
     context,
     cors: {
-        origin: ['https://feed-watcher-frontend.vercel.app', 'https://studio.apollographql.com']
+        origin: [
+            'https://feed-watcher-frontend.vercel.app',
+            'https://studio.apollographql.com',
+            'http://localhost:3002'
+        ],
+        methods: ['POST', 'OPTIONS']
     },
 })
 
