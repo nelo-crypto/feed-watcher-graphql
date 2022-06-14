@@ -21,6 +21,8 @@ export const Object = objectType({
         t.string('dateoflastpageview')
         t.string('dateoffirstpageview')
         t.string('primaryimageurl')
+        t.string('culture')
+        t.string('verificationleveldescription')
         t.list.field('images', {
             type: 'Image',
             resolve(root, args, ctx) {
