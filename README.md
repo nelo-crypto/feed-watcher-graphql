@@ -42,7 +42,7 @@ the standard use of the stack:
   mocks like in the frontend repo.
 * Add more fields from the harvardartmuseums API. I only added enough to make the demo viable in time.
 * Fix lint issues
-* Somehow Typedoc generation is not running
+* Somehow Typedoc generation is not working
 
 ### Heroku
 
