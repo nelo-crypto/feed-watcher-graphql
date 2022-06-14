@@ -35,7 +35,7 @@ export default class Objects extends HTTPDataSource {
 
         console.debug('API Query', path)
 
-        const response = await this.get(path)
+        const response: any = await this.get(path)
 
         return {
             records: response.body.records,
