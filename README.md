@@ -33,6 +33,7 @@ the standard use of the stack:
   harvardartmuseums API. The custom datasource will simply reroute the filters from the GraphQL query into
   harvardartmuseums API via `objects`'s resolver function.
 * In the `docs` folder there is an exported Postman collection to play around with the GraphQL endpoint.
+* Apollo Server was configured to support CORS in order to be used by the Frontend hosted at Vercel.
 
 ### Areas to improve
 
