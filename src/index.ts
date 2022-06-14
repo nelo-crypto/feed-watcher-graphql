@@ -8,10 +8,6 @@ dotenv.config({path: __dirname + '/../.env'})
 export const server = new ApolloServer({
     schema,
     context,
-    csrfPrevention: true,
-    cors: {
-        origin: ['https://feed-watcher-frontend.vercel.app']
-    },
 })
 
 server.listen({port: process.env.PORT}).then(({url}) => {
