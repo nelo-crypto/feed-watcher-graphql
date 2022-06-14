@@ -7,7 +7,6 @@ module.exports = {
         '^.+\\.(ts|tsx)?$': 'ts-jest',
         '^.+\\.(js|jsx)$': 'babel-jest',
     },
-    testEnvironment: "jsdom",
     verbose: true,
     // Hack to avoid NextJS changing jsx to "preserve" with "yarn run dev"
     "globals": {
